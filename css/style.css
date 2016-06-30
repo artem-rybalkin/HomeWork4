@@ -4,8 +4,10 @@
 }
 /*задаём фон страницы*/
 body {
-	background: url(../img/background.png);
-	font-family: Tahoma;	
+	background: url(../img/background.png) no-repeat;
+	font-family: Tahoma;
+	background-size: 100%;
+
 }
 ul {
 	list-style: none;
@@ -15,6 +17,7 @@ ul {
 
 .main {
 	margin-left: 150px;
+	margin-right: 150px;
 	margin-top: 1px;
 	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
 	background-color: white;
@@ -55,7 +58,7 @@ td a {
 }
 
 .photo img {
-	width: 987px;
+	/*width: 987px;*/
 }
 
 /*MENU*/
@@ -63,8 +66,9 @@ td a {
 .menu {
 	margin-top: -2px;
 	height: 37px;
-	box-shadow:  0px 5px 10px -1px rgba(0,0,0,1);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 1);
 	position: relative;
+	
 }
 
 .menu ul {
@@ -96,12 +100,12 @@ td a {
     display: block;
     padding: 10px;
     color: white;
-    background-color: #323232;
+    background: linear-gradient(to top, #303030, #373737);
     text-decoration: none;
     text-align: center;
 }
 .menu ul.navigation > li > a:hover {
-    background-color: #323232;
+    background-color: rgb(48, 48, 48);
 }
 .menu ul.submenu {
     display: none;
@@ -110,7 +114,7 @@ td a {
     top: 38px;
     left: 17px;
     background-color: white;
-    box-shadow:  0px 10px 15px -5px rgba(0,0,0,1);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .menu ul.submenu > li {
     display: block;
@@ -119,7 +123,7 @@ td a {
     display: block;
     padding: 5px;
     color: white;
-    background-color: #323232;
+    background-color: rgb(48, 48, 48);
     text-decoration: none;
 }
 .menu ul.submenu > li > a:hover {
@@ -175,18 +179,6 @@ p {
 	padding-bottom: 7px;
 }
 
-.border_l1,
-.border_r1,
-.border_r2 {
-	border-bottom: 1px solid #c7cacf;
-	
-}
-.border_l2 {
-	border-bottom: 1px solid #c7cacf;
-	padding-top: 190px;
-}
-
-
 /*FOOTER*/
 
 footer {
@@ -198,3 +190,18 @@ footer {
 .copyright {
 	line-height: 30px;
 }
+
+
+
+
+.dropdown_layer {
+  background-color: rgb(48, 48, 48);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 326px;
+  top: 480px;
+  width: 150px;
+  height: 125px;
+  z-index: 28;
+}
+
